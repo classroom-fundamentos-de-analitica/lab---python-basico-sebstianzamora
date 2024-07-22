@@ -385,7 +385,7 @@ def pregunta_09():
                         counts[key] = 1
 
     result = [key for key in sorted(counts.items())]
-    
+    result = dict(result)
     return result
 
 
@@ -508,6 +508,7 @@ def pregunta_12():
                 else:
                     sums[letter] = total_sum
     result = [letter for letter in sorted(sums.items())]
+    result = dict(result)
     return result
 
 # Llamar a la función y mostrar el resultado
